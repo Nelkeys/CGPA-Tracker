@@ -76,43 +76,29 @@ header i{
 
 
 
-
-.years{
+.gp-options{
+    margin-top: 8em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1em;
-    padding: 0 1.5em;
-    margin-top: 6em;
-
+    height: 8em;
 }
-.one-two,
-.three-four{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    height: 5em;
-    width: 100%;
-}
-.one,.two,.three,.four{
-    background: #00000027;
-    width: 100%;
+.gp-options a{
+    color: var(--color);
+    text-decoration: none;
     height: 100%;
+    width: 90%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 1em;
-    cursor: pointer;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 600;
 }
-.one-two p,
-.three-four p{
-    font-family: "Tiny5", sans-serif;
-    font-size: 140%;
-    font-weight: 700;
-    color: #333333;
+.gpa-link{
+    border: 1px solid var(--primary-color);
 }
-
-.one:active,.two:active,.three:active,.four:active{
-    background: #00000010;
+.cgpa-link{
+    background: var(--primary-color);
 }
