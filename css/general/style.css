@@ -6,8 +6,8 @@
     --background-color:#F5F9FF;
     --color: #1f1f1f;
 
-    --accent-color: #ffc107;
-    --inactive-accent: #eebb141f;
+    --primary-color: #ffc107;
+    --inactive-primary: #eebb141f;
 }
 
 
@@ -37,10 +37,11 @@ header{
 header h1{
     letter-spacing: 1px;
     font-weight: 700;
+    cursor: pointer;
 }
 header i{
     font-weight: 900;
-    color: var(--accent-color);
+    cursor: pointer;
 }
 
 
@@ -54,12 +55,13 @@ header i{
 .pie{
     width: 18em;
     height: 18em;
-    border: 13px solid var(--inactive-accent);
+    border: 13px solid var(--inactive-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
 }
 .cgpa{
     font-size: 400%;
@@ -94,17 +96,23 @@ header i{
     width: 100%;
 }
 .one,.two,.three,.four{
-    background: #0000001a;
+    background: #00000027;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1em;
+    cursor: pointer;
 }
 .one-two p,
 .three-four p{
-    font-size: 160%;
+    font-family: "Tiny5", sans-serif;
+    font-size: 140%;
     font-weight: 700;
-    font-family: "Caveat", cursive;
+    color: #333333;
+}
+
+.one:active,.two:active,.three:active,.four:active{
+    background: #00000010;
 }
