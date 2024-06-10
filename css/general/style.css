@@ -19,6 +19,8 @@ i{
     font-size: 250%;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background: var(--background-color);
     color: var(--color);
     font-size: 15px;
