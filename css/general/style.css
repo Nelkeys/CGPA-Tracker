@@ -86,7 +86,6 @@ header i{
     height: 8em;
 }
 .gp-options a{
-    color: var(--color);
     text-decoration: none;
     height: 100%;
     width: 90%;
@@ -98,6 +97,7 @@ header i{
 }
 .gpa-link{
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 .cgpa-link{
     background: var(--primary-color);
