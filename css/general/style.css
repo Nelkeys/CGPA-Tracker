@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap') all;
 
 :root{
-    --background-color:#0a071a;
-    --color: #e6e6e6;
+    --background-color:#F5F9FF;
+    --color: #1f1f1f;
 
-    --accent-color: #e0b219;
+    --accent-color: #ffc107;
+    --inactive-accent: #eebb1475;
 }
 
 
@@ -19,8 +20,6 @@ i{
     font-size: 250%;
 }
 body{
-    display: flex;
-    flex-direction: column;
     background: var(--background-color);
     color: var(--color);
     font-size: 13px;
@@ -55,7 +54,7 @@ header i{
 .pie{
     width: 18em;
     height: 18em;
-    border: 13px solid var(--accent-color);
+    border: 13px solid var(--inactive-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -95,7 +94,7 @@ header i{
     width: 100%;
 }
 .one,.two,.three,.four{
-    background: #ffffff1a;
+    background: #0000001a;
     width: 100%;
     height: 100%;
     display: flex;
