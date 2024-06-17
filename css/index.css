@@ -13,7 +13,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
     font-weight: 600;
     font-size: 130%;
 }
@@ -24,7 +24,7 @@ i{
     display: flex;
     align-items: center;
     gap: .5em;
-    margin: 0 1.5em 0 1.5em;
+    margin: 0 1em 0 1em;
     padding: .5em 1.5em;
     border-radius: 2em;
     cursor: pointer;
@@ -38,8 +38,8 @@ i{
 .cgpa-holder{
     background: var(--primary-color);
     color: #fff;
-    margin: 1.5em;
-    padding: 1em;
+    margin: 1em;
+    padding: 1.5em 1em;
     border-radius: 1em;
     display: flex;
     align-items: end;
@@ -72,7 +72,7 @@ i{
 
 
 .out-links{
-    margin: 1.5em;
+    margin: 1em;
     padding: 1.5em 2em;
     background: #fff;
     display: flex;
@@ -101,7 +101,7 @@ i{
 
 
 .levels{
-    margin: 1.5em;
+    margin: 1em;
 }
 .year1{
     background: #fff;
