@@ -8,7 +8,7 @@ header{
     gap: 2em;
     padding: 1em;
     font-size: 120%;
-    background: #fff;
+    background: #090930;
 }
 
 
@@ -18,7 +18,8 @@ header{
     margin: 1em;
     padding: 1.5em;
     border-radius: 1em;
-    background: #fff;
+    background: #090930;
+    color: var(--color);
 }
 .top p{
     text-decoration: underline;
@@ -57,6 +58,7 @@ header{
     border: none;
     background: var(--inactive-primary);
     border-radius: 5px;
+    color: var(--color);
 }
 select{
     cursor: pointer;
@@ -65,12 +67,14 @@ select{
     padding: 4px;
     font-size: 120%;
     border: none;
-    background: var(--inactive-primary); /* Remove default arrow in some browsers */ /* Remove default arrow in WebKit browsers */
+    background: var(--inactive-primary);
+    color: var(--color);
     border-radius: 5px;
 }
 select option{
     border-radius: 1em;
     text-align: center;
+    color: var(--color);
 }
 
 

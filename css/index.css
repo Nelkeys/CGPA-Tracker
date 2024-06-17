@@ -1,8 +1,8 @@
 @import url(../css/general/style.css) all;
 
 body{
-    background: #f5f5f5;
-    color: #111;
+    background: var(--background-color);
+    color: #f1f1f1;
 }
 i{
     font-size: 30px;
@@ -20,14 +20,15 @@ i{
 
 .advert{
     background: var(--inactive-primary);
-    color: var(--primary-color);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5em;
-    margin: 0 1em 0 1em;
+    margin: 0 auto;
     padding: .5em 1.5em;
     border-radius: 2em;
     cursor: pointer;
+    width: 40%;
 }
 .advert i{
     font-size: 110%;
@@ -36,45 +37,26 @@ i{
 
 
 .cgpa-holder{
-    background: var(--primary-color);
-    color: #fff;
     margin: 1em;
     padding: 1.5em 1em;
-    border-radius: 1em;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-}
-.cgpa-div p{
-    font-size: 90%;
     display: flex;
     align-items: center;
-    gap: .5em;
-}
-.cgpa-div p i{
-    font-size: 120%;
-    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .cgpa{
-    margin-left: 10px;
+    font-size: 350%;
+    font-weight: 550;
 }
-
-
-.right-div p{
-    padding: .5em 1em;
-    background: #fff;
-    color: var(--primary-color);
-    border-radius: 2em;
-    font-size: 90%;
-    font-weight: 600;
+.cgpa-holder h2 i{
+    font-size: 50%;
+    cursor: pointer;
 }
-
 
 
 .out-links{
     margin: 1em;
     padding: 1.5em 2em;
-    background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,12 +70,6 @@ i{
     text-align: center;
     gap: 1em;
 }
-.out-links i{
-    padding: .25em;
-    background: var(--inactive-primary);
-    color: var(--primary-color);
-    border-radius: 10px;
-}
 .outlink-i p{
     font-size: 80%;
     width: 5em;
@@ -104,7 +80,7 @@ i{
     margin: 1em;
 }
 .year1{
-    background: #fff;
+    background: var(--inactive-primary);
     margin-top: 1em;
     padding: 1em;
     border-radius: 1em;
@@ -116,7 +92,7 @@ i{
 .levels img{
     width: 2.5em;
     height: 2.5em;
-    background: #111;
+    background: var(--primary-color);
     border-radius: 50%;
 }
 .instr{
