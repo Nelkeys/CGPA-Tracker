@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') all;
 
 :root{
-    --background-color:#420097;
-    --color: #efe8ff;
+    --background-color:#f5f5f5;
+    --color: #111;
 
-    --primary-color: #00008B;
-    --inactive-primary: #00008b23;
+    --primary-color: #175fb3;
+    --inactive-primary: #1760b315;
 }
 
 
@@ -22,6 +22,10 @@ a:active,
 a:hover{
     outline: none;  
 }
+i{
+    font-size: 30px;
+    cursor: pointer;
+}
 body{
     background: var(--background-color);
     color: var(--color);
@@ -29,7 +33,7 @@ body{
     font-size: 14px;
 
 
-    
+
    /*TO DISABLE ZOOMING ON THE APP*/
     touch-action: pan-x pan-y !important;
         /* -webkit-user-drag: none;

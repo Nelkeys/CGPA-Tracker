@@ -12,6 +12,43 @@
     <title>CGPA Tracker</title>
 </head>
 <body>
-    
+    <header>
+        <i class='bx bx-chevron-left' onclick="window.location.href = '/'"></i>
+        <p><b>Level</b></p>
+    </header>    
+
+    <section class="first-semester">
+        <div class="top">
+            <p><b>First semester</b></p>
+        </div>
+        <div class="get-input"></div>
+        <div class="gpa-container">
+            <h2 class="GPA"></h2>
+        </div>
+        <div class="add-remove">
+            <p onclick="addField('first-semester')" id="addField">Add Field</p>
+            <p onclick="removeField('first-semester')" id="removeField">Remove Field</p>
+        </div>
+        <p onclick="solveGPA('first-semester')" id="solveGPA">Save</p>
+        <p onclick="toggleEditMode('first-semester')" id="toggleEditMode">Edit</p>
+    </section>
+
+    <section class="second-semester">
+        <div class="top">
+            <p><b>Second semester</b></p>
+        </div>
+        <div class="get-input"></div>
+        <div class="gpa-container">
+            <h2 class="GPA"></h2>
+        </div>
+        <div class="add-remove">
+            <p onclick="addField('second-semester')" id="addField">Add Field</p>
+            <p onclick="removeField('second-semester')" id="removeField">Remove Field</p>
+        </div>
+        <p onclick="solveGPA('second-semester')" id="solveGPA">Save</p>
+        <p onclick="toggleEditMode('second-semester')" id="toggleEditMode">Edit</p>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

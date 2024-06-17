@@ -2,3 +2,159 @@
 
 
 
+header{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    font-size: 120%;
+    background: #fff;
+}
+
+
+
+.first-semester,
+.second-semester{
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 1em;
+    background: #fff;
+}
+.top p{
+    text-decoration: underline;
+}
+
+.get-input .course-edit{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 1em;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+.credit-hours-d{
+    text-align: center;
+}
+.grade-d{
+    text-align: right;
+}
+
+
+
+
+
+.get-input .course div p{
+    width: 5em;
+    font-size: 90%;
+}
+.get-input .course div input{
+    width: 10em;
+    padding: 4px;
+    font-size: 120%;
+    border: none;
+    background: var(--inactive-primary);
+    border-radius: 5px;
+}
+select{
+    cursor: pointer;
+    text-align: center;
+    width: 2.5em;
+    padding: 4px;
+    font-size: 120%;
+    border: none;
+    background: var(--inactive-primary); /* Remove default arrow in some browsers */ /* Remove default arrow in WebKit browsers */
+    border-radius: 5px;
+}
+select option{
+    border-radius: 1em;
+    text-align: center;
+}
+
+
+
+
+.add-remove{
+    display: flex;
+    align-items: center;
+    justify-content: '';
+    width: 100%;
+    gap: .5em;
+    margin-top: 2em;
+
+}
+#addField,
+#removeField,
+#toggleEditMode,
+#solveGPA{
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 5px;
+    padding: .5em;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+#addField{
+    background: rgb(27, 156, 27);
+}
+#removeField{
+    background: #cf0606;
+}
+#solveGPA{
+    background: #175fb3;
+}
+#toggleEditMode{
+    background: rgb(27, 156, 27);
+}
+
+
+
+
+
+
+
+.GPA{
+    color: rgb(27, 156, 27);
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+/**SPECIALS**/
+.course-display {
+    display: none;
+}
+.edit-mode .course-display {
+    display: none;
+}
+.edit-mode .course-edit {
+    display: flex;
+}
+.view-mode .course-display {
+    display: flex;
+    justify-content: space-between;
+}
+.view-mode .course-edit {
+    display: none;
+}
+.view-mode .grade{
+    font-weight: 700;
+}
+.view-mode .get-input .course div p{
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+#toggleEditMode{
+    display: none;
+}
