@@ -19,8 +19,8 @@ const auth = getAuth(app);
 const db = getDatabase(app);
 
 
-let firstName = document.getElementById("first_name");
-let lastName = document.getElementById("last_name");
+let firstName = document.getElementById("firstname");
+let lastName = document.getElementById("lastname");
 let Email = document.getElementById("email");
 let Password = document.getElementById("password");
 let signUpForm = document.getElementById("signUpForm");

@@ -3,16 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#ececec">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
 
 
+    <meta name="theme-color" content="#ececec">
+
+    <!--MANIFEST LINK-->
     <link rel="manifest" href="manifest.json">
 
-    <!-- Boxicons CSS -->
+    <!--SCRIPTS-->
+    <script type="module" src="js/dashboard.js"></script>
+
+    <!-- Boxicons AND OTHER CSS -->
+    <link rel="stylesheet" href="css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
+
+
     <title>CGPA Tracker</title>
 </head>
 
@@ -20,7 +27,7 @@
     <section class="top">
         <p>Hi, <span class="username">Nelson</span></p>
 
-        <i class='bx bx-message-rounded-dots' onclick="window.location.href = 'login.html'"></i>
+        <i class='bx bx-log-out-circle' onclick="handleLogout()"></i>
     </section>
 
     <div class="advert">
@@ -95,6 +102,6 @@
 
 
 
-
+    
 </body>
 </html>
