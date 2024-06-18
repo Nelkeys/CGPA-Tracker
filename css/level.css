@@ -8,8 +8,14 @@ header{
     gap: 2em;
     padding: 1em;
     font-size: 120%;
-    background: #090930;
+    background: #fff;
+    position: fixed;
+    left: o;
+    right: 0;
+    top: 0;
+    width: 100%;
 }
+
 
 
 
@@ -18,8 +24,11 @@ header{
     margin: 1em;
     padding: 1.5em;
     border-radius: 1em;
-    background: #090930;
+    background: #fff;
     color: var(--color);
+}
+.first-semester{
+    margin-top: 5.5em;
 }
 .top p{
     text-decoration: underline;

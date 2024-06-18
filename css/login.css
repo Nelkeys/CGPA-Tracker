@@ -1,0 +1,68 @@
+@import url(general/style.css) all;
+
+
+
+body{
+    background: #fff;
+}
+.top{
+    padding: 1em;
+    margin-top: 10em;
+}
+
+
+form{
+    padding: 1em;  
+    margin-top: 1em;
+}
+form p{
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+input{
+    width: 100%;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    border: none;
+    background: var(--inactive-primary);
+}
+input:focus{
+    outline: .5px solid var(--primary-color);
+}
+.password-div{
+    margin-top: 1em;
+}
+#login{
+    width: 100%;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 1em;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#error-message{
+    color: red;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lastname{
+    margin: 1em 0 1em 0;
+}

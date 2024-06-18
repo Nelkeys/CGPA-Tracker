@@ -2,7 +2,6 @@
 
 body{
     background: var(--background-color);
-    color: #f1f1f1;
 }
 i{
     font-size: 30px;
@@ -92,7 +91,7 @@ i{
 .levels img{
     width: 2.5em;
     height: 2.5em;
-    background: var(--primary-color);
+    background: #000;
     border-radius: 50%;
 }
 .instr{

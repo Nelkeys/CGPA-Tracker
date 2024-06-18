@@ -17,13 +17,18 @@
 <body>
 
     <div class="top">
-        <h2>Login</h2>
+        <h2>Sign Up</h2>
         <p>Paragraph to explain the app. Paragraph to explain the app Paragraph.</p>
     </div>
    
 
 
-    <form action="javascript:void(0)" id="login-form">
+    <form action="javascript:void(0)" id="signUpForm">
+        <div class="name-div">
+            <p>Name</p>
+            <input type="firstname" id="firstname" placeholder="First Name" required>
+            <input type="lastname" id="lastname" placeholder="Last name" required>
+        </div>
 
         <div class="email-div">
             <p>Email</p>
@@ -37,18 +42,23 @@
 
         
 
-        <button type="submit" id="login">Login</button>
+        <button type="submit" id="login">Register</button>
 
         <p id="error-message"></p>
     </form>
 
+
+
     <div>
-        <a href="signup.html">sign up</a>
+        <a href="login.html">sign in</a>
     </div>
 
 
 
-    <script src="js/login.js" type="module"></script>
+
+
+
+    <script type="module" src="js/signup.js"></script>
 </body>
 
 </html>
