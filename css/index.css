@@ -96,13 +96,17 @@ i{
     border-radius: 1em;
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1.2em;
     cursor: pointer;
 }
-.levels img{
-    width: 2.5em;
-    height: 2.5em;
-    background: #000;
+.levels i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    background: var(--primary-color);
+    color: #fff;
     border-radius: 50%;
 }
 .instr{
