@@ -37,10 +37,8 @@ body{
 
    /*TO DISABLE ZOOMING ON THE APP*/
     touch-action: pan-x pan-y !important;
-        /* -webkit-user-drag: none;
-            overscroll-behavior: none;
-            */
 
+    -webkit-tap-highlight-color: transparent;
 
     -webkit-user-select: none; /* Disable text selection for WebKit browsers */
     -moz-user-select: none; /* Disable text selection for Mozilla Firefox */
