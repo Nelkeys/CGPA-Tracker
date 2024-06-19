@@ -32,6 +32,9 @@ i{
 .advert i{
     font-size: 110%;
 }
+.bx-log-out-circle{
+    color: red;
+}
 
 .v-hr{
     height: 70px;
