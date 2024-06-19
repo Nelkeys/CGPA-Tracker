@@ -33,11 +33,18 @@ i{
     font-size: 110%;
 }
 
+.v-hr{
+    height: 70px;
+    background: #eee;
+    border: none;
+    margin: 0 auto;
+    width: .2px;
+}
 
 
 .cgpa-holder{
-    margin: 1em;
-    padding: 1.5em 1em;
+    margin: 1em 0 0 0;
+    padding: 1.5em 1em 0 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,11 +71,14 @@ i{
 }
 .outlink-i{
     display: flex;
-    align-items: center;
+    align-items: '';
     justify-content: center;
     flex-direction: column;
     text-align: center;
     gap: 1em;
+}
+.outlink-i i{
+    font-size: 180%;
 }
 .outlink-i p{
     font-size: 80%;
