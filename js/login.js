@@ -36,7 +36,7 @@ const signInUser = evt => {
                     const userData = snapshot.val();
                     if (userData) {
                         // Save user info in sessionStorage
-                        sessionStorage.setItem("user-info", JSON.stringify({
+                        localStorage.setItem("user-info", JSON.stringify({
                             email: user.email,
                             uid: user.uid,
                             firstname: userData.firstname,

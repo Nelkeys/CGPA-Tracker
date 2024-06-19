@@ -45,7 +45,7 @@
 
     <div class="out-links">
         <div class="outlink-i">
-            <i class='bx bxs-school' ></i>
+            <i class='bx bxs-school'></i>
             <p>AKSU Portal</p>
         </div>
 
@@ -106,26 +106,26 @@
 
     <script>
         function updateOwnerName() {
-    let userInfo = sessionStorage.getItem("user-info");
-    
-    // Check if userInfo exists and is not null
-    if (userInfo) {
-        try {
-            userInfo = JSON.parse(userInfo);
-            let firstname = userInfo.firstname;
-            document.getElementById("owner").textContent = firstname;
-        } catch (error) {
-            console.error("Error parsing user info:", error);
-            document.getElementById("owner").textContent = "Guest";
-        }
-    } else {
-        console.error("User info not found in sessionStorage");
-        document.getElementById("owner").textContent = "Guest";
-    }
-}
+            let userInfo = localStorage.getItem("user-info");
 
-// Call the function to update the owner element when the page loads
-window.onload = updateOwnerName;
+            // Check if userInfo exists and is not null
+            if (userInfo) {
+                try {
+                    userInfo = JSON.parse(userInfo);
+                    let firstname = userInfo.firstname;
+                    document.getElementById("owner").textContent = firstname;
+                } catch (error) {
+                    console.error("Error parsing user info:", error);
+                    document.getElementById("owner").textContent = "Guest";
+                }
+            } else {
+                console.error("User info not found in localStorage");
+                document.getElementById("owner").textContent = "Guest";
+            }
+        }
+
+        // Call the function to update the owner element when the page loads
+        window.onload = updateOwnerName;
 
 
     </script>
