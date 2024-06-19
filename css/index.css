@@ -35,7 +35,7 @@ i{
 
 .v-hr{
     height: 70px;
-    background: #eee;
+    background: #d5d5d5;
     border: none;
     margin: 0 auto;
     width: .2px;
@@ -47,13 +47,17 @@ i{
     padding: 1.5em 1em 0 1em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+}
+.cgpa-holder p{
+    color: #777;
 }
 .cgpa{
     font-size: 400%;
     color: '';
     font-weight: 550;
+    font-family: "Prompt", sans-serif;
 }
 .cgpa-holder h2 i{
     font-size: 50%;
