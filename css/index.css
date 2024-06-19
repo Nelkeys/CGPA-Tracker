@@ -44,7 +44,8 @@ i{
     flex-direction: column;
 }
 .cgpa{
-    font-size: 350%;
+    font-size: 400%;
+    color: '';
     font-weight: 550;
 }
 .cgpa-holder h2 i{

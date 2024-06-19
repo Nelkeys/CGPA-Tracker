@@ -17,7 +17,7 @@
     <!-- Boxicons AND OTHER CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
 
 
     <title>CGPA Tracker</title>
@@ -25,7 +25,7 @@
 
 <body>
     <section class="top">
-        <p>Hi, <span class="username">Nelson</span></p>
+        <p>Hi, <span id="owner"></span></p>
 
         <i class='bx bx-log-out-circle' onclick="handleLogout()"></i>
     </section>
@@ -33,28 +33,28 @@
     <div class="advert">
         <i class='bx bxs-megaphone'></i>
         <p class="standing">First Class</p>
-        </div>
+    </div>
     </div>
 
     <section class="cgpa-holder">
-            <h2 class="cgpa" id="cgpa">4.04 <i class='bx bx-hide'  style="display: none;"></i></h2>
+        <h2 class="cgpa" id="cgpa">4.04 <i class='bx bx-hide' style="display: none;"></i></h2>
     </section>
 
 
 
     <div class="out-links">
         <div class="outlink-i">
-            <i class='bx bx-world' ></i>
+            <i class='bx bx-world'></i>
             <p>To NACOS AKSU</p>
         </div>
 
         <div class="outlink-i">
-            <i class='bx bx-mobile-alt' ></i>
+            <i class='bx bx-mobile-alt'></i>
             <p>To NACOS AKSU</p>
         </div>
 
         <div class="outlink-i">
-            <i class='bx bx-world' ></i>
+            <i class='bx bx-world'></i>
             <p>To NACOS AKSU</p>
         </div>
     </div>
@@ -99,9 +99,34 @@
 
 
 
-
-
-
+    <script>
+        function updateOwnerName() {
+    let userInfo = sessionStorage.getItem("user-info");
     
+    // Check if userInfo exists and is not null
+    if (userInfo) {
+        try {
+            userInfo = JSON.parse(userInfo);
+            let firstname = userInfo.firstname;
+            document.getElementById("owner").textContent = firstname;
+        } catch (error) {
+            console.error("Error parsing user info:", error);
+            document.getElementById("owner").textContent = "Guest";
+        }
+    } else {
+        console.error("User info not found in sessionStorage");
+        document.getElementById("owner").textContent = "Guest";
+    }
+}
+
+// Call the function to update the owner element when the page loads
+window.onload = updateOwnerName;
+
+
+    </script>
+
+
+
 </body>
+
 </html>

@@ -1,8 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
-// Your web app's Firebase configuration
+// Your Firebase configuration (same as signup.js)
 const firebaseConfig = {
     apiKey: "AIzaSyAxH4HZiwY8uxmw8jVVePWPU1xHLPopJng",
     authDomain: "gp-tracks-f9718.firebaseapp.com",
@@ -16,6 +16,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getDatabase(app);
+
 const signInForm = document.getElementById("login-form");
 
 const signInUser = evt => {
@@ -25,10 +27,35 @@ const signInUser = evt => {
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            console.log('User logged in:', userCredential.user);
+            const user = userCredential.user;
+            const userRef = ref(db, `userAuthList/${user.uid}`);
 
-            // Redirect to home page or dashboard
-            window.location.href = "/";
+            // Fetch additional user data from Firebase Realtime Database
+            get(userRef)
+                .then((snapshot) => {
+                    const userData = snapshot.val();
+                    if (userData) {
+                        // Save user info in sessionStorage
+                        sessionStorage.setItem("user-info", JSON.stringify({
+                            email: user.email,
+                            uid: user.uid,
+                            firstname: userData.firstname,
+                            lastname: userData.lastname
+                        }));
+
+                        console.log('User logged in:', user);
+
+                        // Redirect to home page or dashboard
+                        window.location.href = "/";
+                    } else {
+                        console.error('User data not found');
+                        document.getElementById('error-message').textContent = 'User data not found';
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error fetching user data:', error);
+                    document.getElementById('error-message').textContent = error.message;
+                });
         })
         .catch((error) => {
             console.error('Error logging in:', error);

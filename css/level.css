@@ -1,5 +1,8 @@
 @import url(../css/general/style.css) all;
 
+body{
+    background: #ececec;
+}
 
 
 header{
