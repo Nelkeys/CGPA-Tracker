@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/level.css">
 
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
+
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
@@ -17,9 +22,6 @@
         <p><b>Level</b></p>
     </header>    
 
-
-
-    
     <section class="first-semester">
         <div class="top">
             <p><b>First semester</b></p>
@@ -35,9 +37,6 @@
         <p onclick="solveGPA('first-semester')" id="solveGPA">Save</p>
         <p onclick="toggleEditMode('first-semester')" id="toggleEditMode">Edit</p>
     </section>
-
-
-
 
     <section class="second-semester">
         <div class="top">
@@ -55,6 +54,14 @@
         <p onclick="toggleEditMode('second-semester')" id="toggleEditMode">Edit</p>
     </section>
 
+
     <script src="js/script.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js" async></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js" async></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js" async></script>
+
 </body>
 </html>

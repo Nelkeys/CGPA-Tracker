@@ -27,7 +27,7 @@ img{
     margin-top: 5em;
 }
 .to-sign-up a{
-    background: #fff;
+    background: var(--primary-color);
     color: var(--background-color);
     font-weight: 600;
     width: 100%;

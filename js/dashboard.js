@@ -21,7 +21,7 @@ const auth = getAuth(app);
 onAuthStateChanged(auth, (user) => {
     if (!user) {
         // No user is signed in, redirect to login
-        window.location.href = "login.html";
+        window.location.href = "landing-page.html";
     }
 });
 
@@ -30,7 +30,7 @@ window.handleLogout = () => {
     signOut(auth).then(() => {
         // Sign-out successful.
         console.log("User signed out.");
-        window.location.href = "login.html";
+        window.location.href = "landing-page.html";
     }).catch((error) => {
         // An error happened.
         console.error("Error signing out:", error);
