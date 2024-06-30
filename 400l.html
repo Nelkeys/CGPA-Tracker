@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ececec">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/level.css">
+
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>400 level</title>
+</head>
+<body>
+    <header>
+        <i class='bx bx-chevron-left' onclick="window.location.href = '/'"></i>
+        <p><b>Level</b></p>
+    </header>    
+
+    <section class="first-semester">
+        <div class="top">
+            <p><b>First semester</b></p>
+        </div>
+        <div class="get-input"></div>
+        <div class="gpa-container">
+            <h2 class="GPA"></h2>
+        </div>
+        <div class="add-remove">
+            <p onclick="addField('first-semester')" id="addField">Add Field</p>
+            <p onclick="removeField('first-semester')" id="removeField">Remove Field</p>
+        </div>
+        <p onclick="solveGPA('first-semester')" id="solveGPA">Save</p>
+        <p onclick="toggleEditMode('first-semester')" id="toggleEditMode">Edit</p>
+    </section>
+
+    <section class="second-semester">
+        <div class="top">
+            <p><b>Second semester</b></p>
+        </div>
+        <div class="get-input"></div>
+        <div class="gpa-container">
+            <h2 class="GPA"></h2>
+        </div>
+        <div class="add-remove">
+            <p onclick="addField('second-semester')" id="addField">Add Field</p>
+            <p onclick="removeField('second-semester')" id="removeField">Remove Field</p>
+        </div>
+        <p onclick="solveGPA('second-semester')" id="solveGPA">Save</p>
+        <p onclick="toggleEditMode('second-semester')" id="toggleEditMode">Edit</p>
+    </section>
+
+
+    <script src="js/script2.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js" async></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js" async></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js" async></script>
+
+
+    <script src="js/CGPA.js"></script>
+</body>
+</html>
